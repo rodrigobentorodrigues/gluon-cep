@@ -31,6 +31,8 @@ jfxmobile {
     }
     android {
         manifest = 'src/android/AndroidManifest.xml'
+        // Adicionar caminho do Android SDK
+        androidSdk = '/home/rodrigo/Android/Sdk'
     }
     ios {
         infoPList = file('src/ios/Default-Info.plist')
