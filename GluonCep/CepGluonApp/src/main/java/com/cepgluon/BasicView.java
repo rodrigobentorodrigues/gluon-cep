@@ -49,7 +49,10 @@ public class BasicView extends View {
                         setCenter(new ResultView(valor));
                     }
                 } catch (JSONException ex) {
-                    ex.printStackTrace();                    
+                    Alert alert = createAlert("CEP Invalido",
+                            "Por favor informe um CEP válido no campo designado!");
+                    alert.show();
+                    campoCEP.setText("");
                 }
             }
         });

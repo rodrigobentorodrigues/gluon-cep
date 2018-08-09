@@ -34,9 +34,8 @@ public class SearchCEP {
             connection.disconnect();
             return stringBuilder.toString();
         } catch (IOException ex) {
-            ex.printStackTrace();
+            return "";
         }
-        return null;
     }
 
 }
